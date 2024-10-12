@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+body {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Navbar*/ 
+header {
+    position: fixed;
+    width: 100%;  
+    z-index: 1000; 
+}
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 30px;
+    background-color: white;
+}
+.nav-links {
+    display: flex; 
+    justify-content: center; 
+    flex: 1; 
+}
+.nav-links a {
+    text-decoration: none; 
+    color: #000; 
+    padding: 10px; 
+    position: relative; 
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+    margin: 0 24px; 
+}
+.nav-links a::after {
+    content: ''; 
+    display: block; 
+    height: 2px; 
+    background: #ffe600; 
+    width: 0; 
+    transition: width 0.3s ease; 
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+}
+.nav-links a:hover::after {
+    width: 100%; 
+}
+
+#logo {
+    width: auto;
+    height: 2rem;
+}
+/*Navbar end*/ 
+/*about end*/
+.content {
+    padding: 15rem 25rem 0rem 25rem;
+    display: flex;
+}
+.content-txt {
+    margin-left: 20px;
+    font-family: "Unbounded", sans-serif;
+    font-size: 3.8rem;
+}
+#txt {
+    color: rgba(255, 187, 0, 1);
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+}
+#skills,
+#contact,
+.about-content, 
+.about-content-two {
+    padding: 1rem 30rem;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.description {
+    font-family: "Raleway", sans-serif;
+    text-align: justify;
+}
+.title-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+/*about end*/
+/*skills*/
+.skills-cont {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 1.5rem;
+}
+.cont {
+    border: black 1px solid;
+    margin-right: 1rem;
+    margin-bottom: 1rem; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    padding: 6px 40px;
+}
+/*skills end*/
+/*work*/
+#work {
+    padding: 7rem 30rem;
+}
+.work-cont {
+    margin-top: 1rem;
+}
+#project {
+    width: 100%;
+    max-width: 980px; 
+    height: auto; 
+}
+.title-work {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+/*work end*/
+/*qoute*/
+.qoute {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 30rem;
+    font-size: 2.6rem;
+}
+#author {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+/*qoute end*/
+/*contact*/
+textarea {
+    width: 55rem;
+    height: 20rem;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical
+}
+#name {
+    padding: 10px;
+    width: 25rem;
+}
+.group {
+    display: flex;
+}
+#submit {
+    background-color: black;
+    color: white;
+    padding: 9px 30px 9px 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 22.2rem;
+    transition: background-color 0.5s ease;
+}
+#submit:hover {
+    background-color: rgba(255, 187, 0, 1);   
+}
+/*contact end*/
+/*footer*/
+footer {
+    background-color: black;
+    padding: 0rem 0rem 3rem 0rem;
+    margin-top: 5rem;
+}
+.footer-link {
+    color: white;
+    display: flex;
+    padding: 6rem 5rem 0rem 5rem;
+}
+.footer-head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer-group {
+    margin-left: 6rem;
+}
+#link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+.copyright {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+/*footer end*/
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 15px;
+  }
+::-webkit-scrollbar-thumb {
+    background: hsl(44, 100%, 50%);
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(44, 100%, 30%);
+  }
+/*scrollbar end*/
+
+
+/*Responsive Design*/
+
+/*Tablet*/
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links a {
+    font-size: 0.9rem;
+    }
+    #profile {
+        width: 300px;
+        height: auto;
+        padding-top: 3rem;
+    }
+    .content {
+        padding: 5rem 4rem 3rem 5rem;
+    }
+    .content-txt {
+        font-size: 2.37rem; 
+        padding: 0.96rem 0rem 1.7rem 0.3rem;
+    }
+    .title { 
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .title-work {
+        font-weight: 500;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .about-content,
+    .about-content-two,
+    #skills,
+    #contact,
+    #work {
+        padding: 0rem 5rem 0rem 5rem;
+    }
+    .skills-cont {
+        flex-direction: column; 
+    }
+    .cont {
+        width: 33rem;
+        margin-right: 0; 
+        text-align: center;
+    }
+    .qoute {
+        padding: 8rem 5rem 8rem 5rem;
+        font-size: 1rem; 
+    }
+    textarea {
+        width: 37.8rem;
+        height: 20rem;
+        font-family: 'Poppins', sans-serif;
+        resize: vertical
+    }
+    #name {
+        width: 36.7rem;
+    }
+    .group {
+        padding: 0.5rem 0rem 2rem 0rem;
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    #submit {
+        margin-top: 0.5rem;
+        margin-left: 0;
+        width: 100%; 
+    }
+    footer {
+        padding: 0rem 0rem 4rem 0rem;
+        margin-top: 5rem;
+    }
+    .footer-link {
+        color: white;
+        padding: 3rem;
+    }
+    .footer-head {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin: 3.2rem 1.3rem 0rem 1.3rem;
+    }
+    .footer-group {
+        margin-left: 0rem;
+        display: block;
+        padding: 0rem;
+    }
+    #link {
+        color: white;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.6rem;
+        margin: 3.2rem 1.3rem 0rem 1.3rem;
+    }
+    .copyright {
+        font-family: 'Poppins', sans-serif;
+        padding-left: 5rem;
+        font-weight: 300;
+        font-size: 0.6rem;
+        padding-top: 2.5rem;
+    }
+}
+
+/*Mobile Large*/
+@media (max-width: 425px) {
+    .cont {
+        width: 14.8rem;
+        margin-right: 0; 
+        text-align: center;
+        font-size: 0.4rem;
+    }
+    .nav-links a {
+        font-size: 0.6rem;
+
+    }
+    .description {
+        font-size: 0.67rem;
+        width: 20rem;
+        text-align: justify;
+    }  
+    #profile {
+        width: 200px;
+        height: auto;
+        padding-top: 3rem;
+    }
+    .about-content,
+    .about-content-two,
+    #skills,
+    #contact,
+    #work {
+        padding: 0rem 3.5rem 0rem 3.5rem;
+    }
+    .content {
+        padding: 5rem 0rem 3rem 3.5rem;
+    }
+    .content-txt {
+        font-size: 1.2rem; 
+        padding: 2rem 3.5rem 1.7rem 0rem;
+    }
+    textarea {
+        width: 19.7rem;
+        height: 15rem;
+        font-family: 'Poppins', sans-serif;
+        resize: vertical;
+        font-size: 0.7rem;
+    }
+    #name {
+        width: 18.6rem;
+        font-size: 0.7rem;
+    }
+    .group {
+        padding: 0.5rem 0rem 2rem 0rem;
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    #submit {
+        margin-top: 0.8rem;
+        margin-left: 0;
+        width: 20rem;
+        font-size: 0.6rem;
+    }
+    .title { 
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .title-heading {
+        font-size: 0.6rem;
+    }
+    .qoute {
+        padding: 6rem 4rem 6rem 4rem;
+        font-size: 0.7rem; 
+    }  
+    #project {
+        width: 20rem;
+    }
+    .title-work {
+        font-size: 0.7rem;
+    }
+    footer {
+        padding: 0rem 0rem 4rem 0rem;
+        margin-top: 5rem;
+    }
+    .footer-link {
+        color: white;
+        padding: 1rem;
+    }
+    .footer-head {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.67rem;
+        font-weight: 500;
+        margin: 3.2rem 0.2rem 0rem 0.2rem;
+    }
+    .footer-group {
+        margin-left: 0rem;
+        display:inline;
+        padding: 0rem;
+    }
+    #link {
+        color: white;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.3rem;
+        margin: 3.2rem 0rem 0rem 0rem;
+    }
+    .copyright {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 0.2rem;
+        position: relative;
+    }
+    .nav-links a {
+        margin: 0 9px; 
+    }
+    #author {
+        font-size: 0.6rem
+    }
+}
+
+/*Mobile Medium*/
+@media (max-width: 375px) {
+    footer {
+        padding: 0rem 28rem 0rem 0rem;
+    }
+    .qoute {
+        font-size: 0.9rem;
+        padding: 2rem 3rem 2rem 5.2rem;
+    }
+}
+
+/*Mobile Small*/
+@media (max-width: 320px) {
+    footer {
+        padding: 0rem 26rem 0rem 0rem;
+    }
+    .qoute {
+        font-size: 0.7rem;
+        padding: 2rem 3rem 2rem 5rem;
+    }
+}
