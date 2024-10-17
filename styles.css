@@ -170,29 +170,32 @@ footer {
     margin-top: 5rem;
 }
 .footer-link {
-    color: white;
     display: flex;
-    padding: 6rem 5rem 0rem 5rem;
+    padding: 6rem 5rem 0rem 45rem;
 }
 .footer-head {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
+    color: white;   
 }
 .footer-group {
-    margin-left: 6rem;
+    margin-left: 4rem;
+    text-align: center;
 }
-#link {
-    color: white;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
+#footer-img {
+    height: auto;
+    width: 3rem;
+}
+#footer-img:hover {
+   background-color:grey;
+   border-radius: 100px;
 }
 .copyright {
-    font-family: 'Poppins', sans-serif;
-    padding-left: 40rem;
-    font-weight: 300;
-    font-size: 0.9rem;
+   color: white;
+   padding-left: 47rem;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.9rem;
 }
 /*footer end*/
 /*scrollbar*/
