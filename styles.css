@@ -406,9 +406,23 @@ footer {
     footer {
         padding: 0rem 28rem 0rem 0rem;
     }
+    .footer-link {
+        padding: 2.5rem 0rem 0rem 6rem;
+    }
+    .footer-group {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .copyright {
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 1.5rem 0rem 2rem 6.4rem;    
+        width: 15rem; 
+    }   
     .qoute {
-        font-size: 0.9rem;
-        padding: 2rem 3rem 2rem 5.2rem;
+        font-size: 0.6rem;
+        padding: 2rem 0rem 2rem 4rem;
+        width: 20rem;
     }
 }
 
@@ -418,7 +432,8 @@ footer {
         padding: 0rem 26rem 0rem 0rem;
     }
     .qoute {
-        font-size: 0.7rem;
-        padding: 2rem 3rem 2rem 5rem;
+        font-size: 0.5rem;
+        padding: 2rem 4rem 2rem 5rem;
+        width: 19rem;
     }
 }
