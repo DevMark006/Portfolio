@@ -311,8 +311,9 @@ footer {
     }
     .nav-links a {
         font-size: 0.6rem;
+        margin: 0 9px; 
 
-    }
+    } 
     .description {
         font-size: 0.67rem;
         width: 20rem;
@@ -369,7 +370,10 @@ footer {
     .qoute {
         padding: 6rem 4rem 6rem 4rem;
         font-size: 0.7rem; 
-    }  
+    } 
+    #author {
+        font-size: 0.6rem
+    }
     #project {
         width: 20rem;
     }
@@ -381,39 +385,20 @@ footer {
         margin-top: 5rem;
     }
     .footer-link {
-        color: white;
-        padding: 1rem;
+        padding: 2.5rem 0rem 0rem 6rem;
     }
     .footer-head {
-        font-family: 'Poppins', sans-serif;
         font-size: 0.67rem;
-        font-weight: 500;
-        margin: 3.2rem 0.2rem 0rem 0.2rem;
+        margin: 0.5rem 0rem 0rem 0rem;
     }
     .footer-group {
-        margin-left: 0rem;
-        display:inline;
-        padding: 0rem;
-    }
-    #link {
-        color: white;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        font-size: 0.3rem;
-        margin: 3.2rem 0rem 0rem 0rem;
+        margin-left: 1.5rem;
     }
     .copyright {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 0.2rem;
-        position: relative;
-    }
-    .nav-links a {
-        margin: 0 9px; 
-    }
-    #author {
-        font-size: 0.6rem
-    }
+        font-size: 0.6rem;
+        margin: 1.5rem 0rem 0rem 6.6rem;
+        padding: 0rem;     
+    }   
 }
 
 /*Mobile Medium*/
