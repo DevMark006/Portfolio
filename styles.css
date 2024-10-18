@@ -381,7 +381,7 @@ footer {
         font-size: 0.7rem;
     }
     footer {
-        padding: 0rem 0rem 4rem 0rem;
+        padding: 0rem 28rem 4rem 0rem;
         margin-top: 5rem;
     }
     .footer-link {
@@ -429,7 +429,7 @@ footer {
 /*Mobile Small*/
 @media (max-width: 320px) {
     footer {
-        padding: 0rem 26rem 0rem 0rem;
+        padding: 0rem 28rem 0rem 0rem;
     }
     .qoute {
         font-size: 0.5rem;
