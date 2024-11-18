@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+:root {
+    --text-color: #ffff;
+}
 body {
     margin: 0;
+    background-color: #000;
 }
 html {
     scroll-behavior: smooth;
@@ -19,7 +21,7 @@ nav {
     justify-content: space-between; 
     align-items: center; 
     padding: 30px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 .nav-links {
     display: flex; 
@@ -28,7 +30,7 @@ nav {
 }
 .nav-links a {
     text-decoration: none; 
-    color: #000; 
+    color: var(--text-color); 
     padding: 10px; 
     position: relative; 
     font-family: 'Poppins', sans-serif;
@@ -49,66 +51,102 @@ nav {
 .nav-links a:hover::after {
     width: 100%; 
 }
-
 #logo {
     width: auto;
     height: 2rem;
 }
 /*Navbar end*/ 
-/*about end*/
-.content {
-    padding: 15rem 25rem 0rem 25rem;
+/*About*/
+#content {
+    padding: 12rem 25rem 0rem 25rem;
     display: flex;
 }
 .content-txt {
-    margin-left: 20px;
-    font-family: "Unbounded", sans-serif;
-    font-size: 3.8rem;
+    margin-left: 1rem;
+    font-family: "League Spartan", sans-serif;
+    font-size: 5.8rem;
+    color: var(--text-color);  
 }
-#txt {
+#txt-x {
     color: rgba(255, 187, 0, 1);
-    font-family: "Unbounded", sans-serif;
-    font-weight: 300;
+    font-family: "League Spartan", sans-serif;
+    background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    text-decoration: white underline 5px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 4.5s linear infinite;
+}
+#txt-y {
+    color: rgba(255, 187, 0, 1);
+    font-family: "League Spartan", sans-serif;
+    background: linear-gradient(to right, #aaff83, #01ff38, #6438ca, #c71313, #eedf11);
+    background-size: 200%;
+    background-clip: text;
+    text-decoration: white underline 5px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 4.5s linear infinite;
 }
 #skills,
 #contact,
-.about-content, 
+.about-content {
+    padding: 5.9rem 30rem 0rem 30rem;
+}
 .about-content-two {
-    padding: 1rem 30rem;
+    padding: 0.6rem 30rem 0rem 30rem;
 }
 .title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
+    color: var(--text-color);
 }
 .description {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: justify;
+    color: var(--text-color);
 }
 .title-heading {
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
+    color: var(--text-color);
 }
 /*about end*/
 /*skills*/
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    } 
+}
 .skills-cont {
     display: flex;
     flex-wrap: wrap; 
-    margin-top: 1.5rem;
+    margin-top: 1.5rem; 
 }
 .cont {
-    border: black 1px solid;
-    margin-right: 1rem;
-    margin-bottom: 1rem; 
+    border: rgb(255, 255, 255) 1px solid;
+    margin-right: 2rem;
+    margin-bottom: 3rem; 
     font-family: 'Poppins', sans-serif;
     font-size: 0.6rem;
-    padding: 6px 40px;
+    padding: 10px 70px;
+    color: var(--text-color);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 /*skills end*/
 /*work*/
 #work {
-    padding: 7rem 30rem;
+    padding: 5.9rem 30rem;
 }
 .work-cont {
     margin-top: 1rem;
@@ -122,6 +160,7 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
+    color: var(--text-color);
 }
 /*work end*/
 /*qoute*/
@@ -135,13 +174,28 @@ nav {
     font-size: 0.9rem;
     font-weight: 300;
 }
+.paragraph {
+    background: linear-gradient(to right, #c99d0d, #0870c5, #0da7d6, #0e1cdd, #c99d0d);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 4.5s linear infinite;
+}
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
 /*qoute end*/
 /*contact*/
 textarea {
     width: 55rem;
     height: 20rem;
     font-family: 'Poppins', sans-serif;
-    resize: vertical
+    resize: vertical;
+    color: var(--text-color);
+    border: whitesmoke solid 2px;
 }
 #name {
     padding: 10px;
@@ -151,8 +205,8 @@ textarea {
     display: flex;
 }
 #submit {
-    background-color: black;
-    color: white;
+    background-color: hsl(236, 92%, 42%);
+    color:var(--text-color);
     padding: 9px 30px 9px 30px;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -160,12 +214,12 @@ textarea {
     transition: background-color 0.5s ease;
 }
 #submit:hover {
-    background-color: rgba(255, 187, 0, 1);   
+    background-color: hsl(44, 100%, 25%);   
 }
 /*contact end*/
 /*footer*/
 footer {
-    background-color: black;
+    background-color: #0a0a0a;
     padding: 0rem 0rem 3rem 0rem;
     margin-top: 5rem;
 }
@@ -177,7 +231,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
-    color: white;   
+    color: var(--text-color);   
 }
 .footer-group {
     margin-left: 4rem;
@@ -192,7 +246,7 @@ footer {
    border-radius: 100px;
 }
 .copyright {
-   color: white;
+   color: var(--text-color);
    padding-left: 47rem;
    font-family: 'Poppins', sans-serif;
    font-size: 0.9rem;
@@ -210,12 +264,10 @@ footer {
   }
 /*scrollbar end*/
 
-
 /*Responsive Design*/
-
 /*Tablet*/
 @media (max-width: 768px) {
-     nav {
+    nav {
         flex-direction: column;
         padding: 15px;
     }
@@ -227,15 +279,15 @@ footer {
         height: auto;
         padding-top: 3rem;
     }
-    .content {
+    #content {
         padding: 5rem 4rem 3rem 5rem;
     }
     .content-txt {
-        font-size: 2.37rem; 
-        padding: 0.96rem 0rem 1.7rem 0.3rem;
+        font-size: 3.2rem; 
+        padding: 3.0rem 0rem 1.7rem 0.3rem;
     }
     .title { 
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 700;
     }
     .title-work {
@@ -249,19 +301,17 @@ footer {
     #skills,
     #contact,
     #work {
-        padding: 0rem 5rem 0rem 5rem;
-    }
-    .skills-cont {
-        flex-direction: column; 
+        padding: 1rem 5rem 0rem 5rem;
     }
     .cont {
-        width: 33rem;
-        margin-right: 0; 
+        width: 5rem;
+        font-size: 0.5rem;
         text-align: center;
+        margin-bottom: 0.5rem;
     }
     .qoute {
-        padding: 8rem 5rem 8rem 5rem;
-        font-size: 1rem; 
+        padding: 7rem 5rem 7rem 5rem;
+        font-size: 0.9rem; 
     }
     textarea {
         width: 37.8rem;
@@ -304,10 +354,11 @@ footer {
 /*Mobile Large*/
 @media (max-width: 425px) {
     .cont {
-        width: 14.8rem;
-        margin-right: 0; 
-        text-align: center;
+        width: 11.3rem;
+        margin-right: 0.5rem; 
+        margin-bottom: 0.5rem;
         font-size: 0.4rem;
+        text-align: center;
     }
     .nav-links a {
         font-size: 0.6rem;
@@ -324,19 +375,27 @@ footer {
         height: auto;
         padding-top: 3rem;
     }
-    .about-content,
-    .about-content-two,
+    .about-content {
+        padding: 0rem 0rem 0rem 4rem;
+    }
+    .about-content-two {
+        padding: 0.6rem 0rem 0rem 4rem;
+    }
     #skills,
     #contact,
     #work {
-        padding: 0rem 3.5rem 0rem 3.5rem;
+        padding: 2rem 0rem 0rem 4rem;
     }
-    .content {
+    #content {
         padding: 5rem 0rem 3rem 3.5rem;
     }
+    #profile {
+        height: 14rem;
+        width: 9.5rem;
+    }
     .content-txt {
-        font-size: 1.2rem; 
-        padding: 2rem 3.5rem 1.7rem 0rem;
+        font-size: 1.6rem; 
+        padding: 3.5rem 1.4rem 1.7rem 0rem;
     }
     textarea {
         width: 19.7rem;
@@ -361,15 +420,15 @@ footer {
         font-size: 0.6rem;
     }
     .title { 
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         font-weight: 700;
     }
     .title-heading {
         font-size: 0.6rem;
     }
     .qoute {
-        padding: 6rem 4rem 6rem 4rem;
-        font-size: 0.7rem; 
+        padding: 3rem 2rem 3rem 4rem;
+        font-size: 0.4rem; 
     } 
     #author {
         font-size: 0.6rem
@@ -397,9 +456,10 @@ footer {
     .copyright {
         font-size: 0.6rem;
         margin: 1.5rem 0rem 0rem 6.6rem;
-        padding: 0rem;     
+        padding: 0rem;  
+        width: 20rem;   
     }   
-}
+} 
 
 /*Mobile Medium*/
 @media (max-width: 375px) {
@@ -424,6 +484,16 @@ footer {
         padding: 2rem 0rem 2rem 4rem;
         width: 20rem;
     }
+    #profile {
+       width: 10rem;
+    }
+    .content-txt {
+        font-size: 1.4rem; 
+        padding: 4rem 0rem 1.7rem 0rem;
+    }
+    .cont {
+        width: 15rem;
+    }
 }
 
 /*Mobile Small*/
@@ -435,5 +505,13 @@ footer {
         font-size: 0.5rem;
         padding: 2rem 4rem 2rem 5rem;
         width: 19rem;
+    }
+    .content-txt {
+        padding-top: 1.9rem;
+    }
+    .cont {
+        width: 16rem;
+        margin-left: 4rem;
+        margin-right: 0rem;
     }
 }
