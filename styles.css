@@ -71,9 +71,9 @@ nav {
     color: rgba(255, 187, 0, 1);
     font-family: "League Spartan", sans-serif;
     background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+    text-decoration: white underline 5px;
     background-size: 200%;
     background-clip: text;
-    text-decoration: white underline 5px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 4.5s linear infinite;
@@ -82,9 +82,9 @@ nav {
     color: rgba(255, 187, 0, 1);
     font-family: "League Spartan", sans-serif;
     background: linear-gradient(to right, #aaff83, #01ff38, #6438ca, #c71313, #eedf11);
+    text-decoration: white underline 5px;
     background-size: 200%;
     background-clip: text;
-    text-decoration: white underline 5px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 4.5s linear infinite;
@@ -194,8 +194,6 @@ textarea {
     height: 20rem;
     font-family: 'Poppins', sans-serif;
     resize: vertical;
-    color: var(--text-color);
-    border: whitesmoke solid 2px;
 }
 #name {
     padding: 10px;
@@ -219,7 +217,7 @@ textarea {
 /*contact end*/
 /*footer*/
 footer {
-    background-color: #0a0a0a;
+    background-color: #3d3d3d;
     padding: 0rem 0rem 3rem 0rem;
     margin-top: 5rem;
 }
@@ -267,12 +265,8 @@ footer {
 /*Responsive Design*/
 /*Tablet*/
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 15px;
-    }
     .nav-links a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     #profile {
         width: 300px;
@@ -283,8 +277,8 @@ footer {
         padding: 5rem 4rem 3rem 5rem;
     }
     .content-txt {
-        font-size: 3.2rem; 
-        padding: 3.0rem 0rem 1.7rem 0.3rem;
+        font-size: 3.8rem; 
+        padding: 2rem 0rem 0rem 0rem;
     }
     .title { 
         font-size: 1.3rem;
@@ -296,31 +290,39 @@ footer {
     .description {
         font-size: 0.8rem;
     }
+    #content {
+        padding: 6rem 2rem 0rem 2rem;
+    }
     .about-content,
     .about-content-two,
     #skills,
     #contact,
     #work {
-        padding: 1rem 5rem 0rem 5rem;
+        padding: 1rem 2rem 0rem 2rem;
     }
     .cont {
-        width: 5rem;
+        width: 3.8rem;
         font-size: 0.5rem;
         text-align: center;
         margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
     }
     .qoute {
-        padding: 7rem 5rem 7rem 5rem;
-        font-size: 0.9rem; 
+        padding: 3rem 0.8rem 3rem 0.8rem;
+        font-size: 1.4rem; 
+        text-align: center;
+    }
+    .paragraph {
+        padding: 0rem;
     }
     textarea {
-        width: 37.8rem;
+        width: 43.5rem;
         height: 20rem;
         font-family: 'Poppins', sans-serif;
         resize: vertical
     }
     #name {
-        width: 36.7rem;
+        width: 42.5rem;
     }
     .group {
         padding: 0.5rem 0rem 2rem 0rem;
@@ -328,8 +330,8 @@ footer {
         align-items: stretch; 
     }
     #submit {
-        margin-top: 0.5rem;
-        margin-left: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
         width: 100%; 
     }
     .footer-link {
@@ -350,168 +352,30 @@ footer {
         padding-top: 1rem;
     }
 }
-
 /*Mobile Large*/
 @media (max-width: 425px) {
-    .cont {
-        width: 11.3rem;
-        margin-right: 0.5rem; 
-        margin-bottom: 0.5rem;
-        font-size: 0.4rem;
-        text-align: center;
-    }
-    .nav-links a {
-        font-size: 0.6rem;
-        margin: 0 9px; 
-
-    } 
-    .description {
-        font-size: 0.67rem;
-        width: 20rem;
-        text-align: justify;
-    }  
-    #profile {
-        width: 200px;
-        height: auto;
-        padding-top: 3rem;
-    }
-    .about-content {
-        padding: 0rem 0rem 0rem 4rem;
-    }
-    .about-content-two {
-        padding: 0.6rem 0rem 0rem 4rem;
-    }
-    #skills,
-    #contact,
-    #work {
-        padding: 2rem 0rem 0rem 4rem;
-    }
-    #content {
-        padding: 5rem 0rem 3rem 3.5rem;
-    }
-    #profile {
-        height: 14rem;
-        width: 9.5rem;
-    }
-    .content-txt {
-        font-size: 1.6rem; 
-        padding: 3.5rem 1.4rem 1.7rem 0rem;
-    }
-    textarea {
-        width: 19.7rem;
-        height: 15rem;
-        font-family: 'Poppins', sans-serif;
-        resize: vertical;
-        font-size: 0.7rem;
-    }
-    #name {
-        width: 18.6rem;
-        font-size: 0.7rem;
-    }
-    .group {
-        padding: 0.5rem 0rem 2rem 0rem;
-        flex-direction: column; 
-        align-items: stretch; 
-    }
-    #submit {
-        margin-top: 0.8rem;
-        margin-left: 0;
-        width: 20rem;
-        font-size: 0.6rem;
-    }
-    .title { 
-        font-size: 0.9rem;
-        font-weight: 700;
-    }
-    .title-heading {
-        font-size: 0.6rem;
-    }
-    .qoute {
-        padding: 3rem 2rem 3rem 4rem;
-        font-size: 0.4rem; 
-    } 
-    #author {
-        font-size: 0.6rem
-    }
-    #project {
-        width: 20rem;
-    }
-    .title-work {
-        font-size: 0.7rem;
-    }
-    footer {
-        padding: 0rem 28rem 4rem 0rem;
-        margin-top: 5rem;
-    }
-    .footer-link {
-        padding: 2.5rem 0rem 0rem 6rem;
-    }
-    .footer-head {
-        font-size: 0.67rem;
-        margin: 0.5rem 0rem 0rem 0rem;
-    }
-    .footer-group {
-        margin-left: 1.5rem;
-    }
-    .copyright {
-        font-size: 0.6rem;
-        margin: 1.5rem 0rem 0rem 6.6rem;
-        padding: 0rem;  
-        width: 20rem;   
-    }   
+   body {
+    width: 200%;
+   }
+   textarea {
+    width: 49rem;
+   }
+   #name {
+    width: 48rem;
+   }
 } 
-
 /*Mobile Medium*/
 @media (max-width: 375px) {
-    footer {
-        padding: 0rem 28rem 0rem 0rem;
-    }
-    .footer-link {
-        padding: 2.5rem 0rem 0rem 6rem;
-    }
-    .footer-group {
-        margin-left: 1.5rem;
-        margin-top: 0.5rem;
-    }
-    .copyright {
-        font-size: 0.6rem;
-        margin: 0;
-        padding: 1.5rem 0rem 2rem 6.4rem;    
-        width: 15rem; 
-    }   
-    .qoute {
-        font-size: 0.6rem;
-        padding: 2rem 0rem 2rem 4rem;
-        width: 20rem;
-    }
-    #profile {
-       width: 10rem;
-    }
-    .content-txt {
-        font-size: 1.4rem; 
-        padding: 4rem 0rem 1.7rem 0rem;
-    }
-    .cont {
-        width: 15rem;
-    }
+    textarea {
+        width: 42.5rem;
+       }
+       #name {
+        width: 41.6rem;
+       }
 }
-
 /*Mobile Small*/
 @media (max-width: 320px) {
-    footer {
-        padding: 0rem 28rem 0rem 0rem;
-    }
-    .qoute {
-        font-size: 0.5rem;
-        padding: 2rem 4rem 2rem 5rem;
-        width: 19rem;
-    }
-    .content-txt {
-        padding-top: 1.9rem;
-    }
-    .cont {
-        width: 16rem;
-        margin-left: 4rem;
-        margin-right: 0rem;
+    body {
+        width: 230%;
     }
 }
